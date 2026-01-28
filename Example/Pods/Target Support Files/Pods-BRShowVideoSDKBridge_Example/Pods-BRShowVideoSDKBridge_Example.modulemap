@@ -1,0 +1,6 @@
+framework module Pods_BRShowVideoSDKBridge_Example {
+  umbrella header "Pods-BRShowVideoSDKBridge_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,116 @@
+PODS:
+  - BRShowVideoSDKBridge (0.1.0):
+    - PangrowthX/shortplay (= 2.3.0.0)
+    - TTSDKFramework/Player-SR (= 1.42.3.4-premium)
+  - PangrowthDJX (2.3.0.0):
+    - PGXToolbox (= 2.3.0.0)
+  - PangrowthX/shortplay (2.3.0.0):
+    - PangrowthDJX (= 2.3.0.0)
+    - PGXToolbox (= 2.3.0.0)
+    - TTSDKFramework/Player
+  - PGXToolbox (2.3.0.0):
+    - RangersAPM/CN (>= 3.10.6)
+    - RangersAPM/Crash (>= 3.10.6)
+    - RangersAPM/EventMonitor (>= 3.10.6)
+    - RangersAppLog/Host/CN (>= 6.16.3)
+    - RangersAppLog/Log (>= 6.16.3)
+  - RangersAPM/Above (5.2.12)
+  - RangersAPM/CN (5.2.12):
+    - RangersAPM/Core
+    - RangersAPM/Public
+  - RangersAPM/Core (5.2.12):
+    - RangersAPM/HMDLite
+  - RangersAPM/Crash (5.2.12):
+    - RangersAPM/Core
+    - RangersAPM/HMD
+    - RangersAPM/Public
+    - RangersAPM/SessionTracker
+    - RangersAPM/Zip
+  - RangersAPM/EventMonitor (5.2.12):
+    - RangersAPM/Core
+    - RangersAPM/HMD
+    - RangersAPM/Public
+  - RangersAPM/HMD (5.2.12):
+    - RangersAPM/Core
+    - RangersAPM/Public
+  - RangersAPM/HMDLite (5.2.12)
+  - RangersAPM/Public (5.2.12):
+    - RangersAPM/Above
+    - RangersAPM/Core
+    - RangersAPM/HMDLite
+    - RangersAPM/Zyone
+  - RangersAPM/SessionTracker (5.2.12):
+    - RangersAPM/Core
+    - RangersAPM/HMD
+    - RangersAPM/Public
+  - RangersAPM/Zip (5.2.12)
+  - RangersAPM/Zyone (5.2.12)
+  - RangersAppLog/Core (6.16.9):
+    - RangersAppLog/Encryptor/VOLC
+  - RangersAppLog/Encryptor/VOLC (6.16.9)
+  - RangersAppLog/Host/CN (6.16.9):
+    - RangersAppLog/Core
+  - RangersAppLog/Log (6.16.9):
+    - RangersAppLog/Core
+  - TTSDKFramework/BMF (1.42.3.4-premium):
+    - TTSDKFramework/Core
+  - TTSDKFramework/Core (1.42.3.4-premium):
+    - RangersAppLog/Core (~> 6.16.2)
+    - RangersAppLog/Host/CN (~> 6.16.2)
+  - TTSDKFramework/HttpDNS (1.42.3.4-premium)
+  - TTSDKFramework/Player (1.42.3.4-premium):
+    - TTSDKFramework/Core
+    - TTSDKFramework/HttpDNS
+    - TTSDKFramework/PlayerCore
+    - TTSDKFramework/Reachability
+    - TTSDKFramework/TopSignature
+    - TTSDKFramework/VCN
+    - TTSDKFramework/VolcLog
+  - TTSDKFramework/Player-SR (1.42.3.4-premium):
+    - TTSDKFramework/BMF
+    - TTSDKFramework/Player
+  - TTSDKFramework/PlayerCore (1.42.3.4-premium):
+    - TTSDKFramework/Core
+    - TTSDKFramework/Tools
+    - TTSDKFramework/TTFFmpeg
+    - TTSDKFramework/VideoProcessor
+  - TTSDKFramework/Reachability (1.42.3.4-premium)
+  - TTSDKFramework/SSL (1.42.3.4-premium)
+  - TTSDKFramework/Tools (1.42.3.4-premium):
+    - TTSDKFramework/SSL
+  - TTSDKFramework/TopSignature (1.42.3.4-premium)
+  - TTSDKFramework/TTFFmpeg (1.42.3.4-premium):
+    - TTSDKFramework/Tools
+  - TTSDKFramework/VCN (1.42.3.4-premium)
+  - TTSDKFramework/VideoProcessor (1.42.3.4-premium)
+  - TTSDKFramework/VolcLog (1.42.3.4-premium):
+    - TTSDKFramework/SSL
+
+DEPENDENCIES:
+  - BRShowVideoSDKBridge (from `../`)
+
+SPEC REPOS:
+  https://github.com/burning-git/volcengine-specs.git:
+    - PangrowthDJX
+    - PangrowthX
+    - PGXToolbox
+    - RangersAPM
+    - RangersAppLog
+    - TTSDKFramework
+
+EXTERNAL SOURCES:
+  BRShowVideoSDKBridge:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BRShowVideoSDKBridge: 42375bcc972bdce97276725b1949cdb3535a7580
+  PangrowthDJX: 959f080ed07f1a1d61846e6eaab6fff33ab7f291
+  PangrowthX: b5cd0bd3db6143b28ed52de6ceae1dede2ef088a
+  PGXToolbox: 8881e030ad4d8413aa2794b9c7a006d0a12d3705
+  RangersAPM: 7d82ad06964bc5b03797893a69f5f939addfdbc8
+  RangersAppLog: d4fa640a806e5fef583b07bea2f610684e81161e
+  TTSDKFramework: 3cba00b346c4a9adaa014e26fd081bb8ad9c5314
+
+PODFILE CHECKSUM: b8d309f253ad07c26ad14bab05ab3f9cce87e0cc
+
+COCOAPODS: 1.16.2

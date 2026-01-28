@@ -1,0 +1,33 @@
+{
+  "name": "BRShowVideoSDKBridge",
+  "version": "0.1.0",
+  "summary": "A bridge SDK for ShowVideo integration on iOS.",
+  "description": "BRShowVideoSDKBridge is a bridge SDK that provides seamless integration\nwith ShowVideo services for iOS applications. It simplifies video-related\nfunctionality and provides a clean API interface.",
+  "homepage": "https://gitee.com/xiaoqiApp/BRShowVideoSDKBridge.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Dewa": "2496883739@qq.com"
+  },
+  "source": {
+    "git": "https://gitee.com/xiaoqiApp/BRShowVideoSDKBridge.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "static_framework": true,
+  "source_files": "BRShowVideoSDKBridge/Classes/**/*",
+  "dependencies": {
+    "PangrowthX/shortplay": [
+      "2.3.0.0"
+    ],
+    "TTSDKFramework/Player-SR": [
+      "1.42.3.4-premium"
+    ]
+  },
+  "swift_version": "5.0"
+}

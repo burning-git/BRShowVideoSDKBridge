@@ -1,0 +1,6 @@
+framework module RangersAPM {
+  umbrella header "RangersAPM-umbrella.h"
+
+  export *
+  module * { export * }
+}

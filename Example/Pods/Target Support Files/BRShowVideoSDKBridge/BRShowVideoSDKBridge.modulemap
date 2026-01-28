@@ -1,0 +1,6 @@
+framework module BRShowVideoSDKBridge {
+  umbrella header "BRShowVideoSDKBridge-umbrella.h"
+
+  export *
+  module * { export * }
+}

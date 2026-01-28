@@ -1,0 +1,5 @@
+framework module TTSDKBMF {
+  umbrella header "TTSDKBMF.h"
+  export *
+  module * { export * }
+}

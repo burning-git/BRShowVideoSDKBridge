@@ -1,0 +1,5 @@
+framework module TTSDKPlayerCore {
+  umbrella header "TTSDKPlayerCore.h"
+  export *
+  module * { export * }
+}
