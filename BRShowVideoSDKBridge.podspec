@@ -23,11 +23,11 @@ with ShowVideo services for iOS applications. It simplifies video-related
 functionality and provides a clean API interface.
                        DESC
 
-  s.homepage         = 'https://gitee.com/xiaoqiApp/BRShowVideoSDKBridge.git'
+  s.homepage         = 'https://github.com/burning-git/BRShowVideoSDKBridge'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Dewa' => 'burning_git@163.com' }
-  s.source           = { :git => 'https://gitee.com/xiaoqiApp/BRShowVideoSDKBridge.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/burning-git/BRShowVideoSDKBridge.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
