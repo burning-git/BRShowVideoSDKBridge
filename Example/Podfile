@@ -5,10 +5,10 @@ source 'https://cdn.cocoapods.org/'
 
 use_frameworks! :linkage => :static
 
-platform :ios, '12.0'
+platform :ios, '14.0'
 
 target 'BRShowVideoSDKBridge_Example' do
-  pod 'BRShowVideoSDKBridge'#, :path => '../'
+  pod 'BRShowVideoSDKBridge', :path => '../'  # 本地 pod
 
   target 'BRShowVideoSDKBridge_Tests' do
     inherit! :search_paths
@@ -20,7 +20,48 @@ post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
     end
   end
+  
+  # 为主项目添加 BUAdSDK 所需的系统框架
+  main_project = installer.aggregate_targets.first.user_project
+  main_project.targets.each do |target|
+    if target.name == 'BRShowVideoSDKBridge_Example'
+      target.build_configurations.each do |config|
+        # 添加缺失的框架和库
+        ldflags = config.build_settings['OTHER_LDFLAGS'] || ['$(inherited)']
+        ldflags = [ldflags] if ldflags.is_a?(String)
+        
+        # 需要强链接的框架
+        frameworks_to_add = [
+          '-framework CoreHaptics',
+          '-framework AdSupport',
+          '-framework CoreLocation', 
+          '-framework MediaPlayer',
+          '-framework StoreKit',
+          '-framework MobileCoreServices',
+          '-framework Accelerate'
+        ]
+        
+        # 需要弱链接的框架 (iOS 14+)
+        weak_frameworks = [
+          '-weak_framework AppTrackingTransparency'
+        ]
+        
+        # 需要链接的库
+        libs_to_add = [
+          '-lresolv'
+        ]
+        
+        all_flags = frameworks_to_add + weak_frameworks + libs_to_add
+        all_flags.each do |flag|
+          ldflags << flag unless ldflags.include?(flag)
+        end
+        
+        config.build_settings['OTHER_LDFLAGS'] = ldflags
+      end
+    end
+  end
+  main_project.save
 end

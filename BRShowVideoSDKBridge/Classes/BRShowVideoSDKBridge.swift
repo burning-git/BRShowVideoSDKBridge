@@ -9,9 +9,11 @@
 import Foundation
 import UIKit
 
-// 重新导出依赖模块，使用者只需 import BRShowVideoSDKBridge 即可访问所有 API
-@_exported import PangrowthX
-@_exported import TTSDKFramework
+// TTSDKFramework 用于视频播放
+import TTSDKFramework
+
+// 注意: PangrowthDJX 是 Objective-C 框架，需要通过桥接头文件使用
+// 如需使用 PangrowthDJX API，请在 Objective-C 代码中导入或使用 @objc 桥接
 
 /// BRShowVideoSDKBridge 主类
 /// 提供 ShowVideo SDK 的桥接功能
