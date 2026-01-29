@@ -9,10 +9,6 @@
 import Foundation
 import UIKit
 
-// 重新导出依赖模块，使用者只需 import BRShowVideoSDKBridge 即可访问所有 API
-@_exported import PangrowthX
-@_exported import TTSDKFramework
-
 /// BRShowVideoSDKBridge 主类
 /// 提供 ShowVideo SDK 的桥接功能
 public class BRShowVideoSDKBridge: NSObject {

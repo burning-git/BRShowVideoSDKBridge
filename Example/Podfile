@@ -1,5 +1,5 @@
 # 私有源
-source 'https://github.com/burning-git/volcengine-specs.git'
+source 'https://github.com/burning-git/volcengine-specs'
 # CocoaPods 官方源
 source 'https://cdn.cocoapods.org/'
 
@@ -8,7 +8,7 @@ use_frameworks! :linkage => :static
 platform :ios, '12.0'
 
 target 'BRShowVideoSDKBridge_Example' do
-  pod 'BRShowVideoSDKBridge', :path => '../'
+  pod 'BRShowVideoSDKBridge'#, :path => '../'
 
   target 'BRShowVideoSDKBridge_Tests' do
     inherit! :search_paths

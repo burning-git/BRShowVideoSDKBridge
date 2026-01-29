@@ -87,10 +87,11 @@ PODS:
     - TTSDKFramework/SSL
 
 DEPENDENCIES:
-  - BRShowVideoSDKBridge (from `../`)
+  - BRShowVideoSDKBridge
 
 SPEC REPOS:
-  https://github.com/burning-git/volcengine-specs.git:
+  https://github.com/burning-git/volcengine-specs:
+    - BRShowVideoSDKBridge
     - PangrowthDJX
     - PangrowthX
     - PGXToolbox
@@ -98,12 +99,8 @@ SPEC REPOS:
     - RangersAppLog
     - TTSDKFramework
 
-EXTERNAL SOURCES:
-  BRShowVideoSDKBridge:
-    :path: "../"
-
 SPEC CHECKSUMS:
-  BRShowVideoSDKBridge: 42375bcc972bdce97276725b1949cdb3535a7580
+  BRShowVideoSDKBridge: 30a25964689ee428ebfa00eab3e5e35c28777253
   PangrowthDJX: 959f080ed07f1a1d61846e6eaab6fff33ab7f291
   PangrowthX: b5cd0bd3db6143b28ed52de6ceae1dede2ef088a
   PGXToolbox: 8881e030ad4d8413aa2794b9c7a006d0a12d3705
@@ -111,6 +108,6 @@ SPEC CHECKSUMS:
   RangersAppLog: d4fa640a806e5fef583b07bea2f610684e81161e
   TTSDKFramework: 3cba00b346c4a9adaa014e26fd081bb8ad9c5314
 
-PODFILE CHECKSUM: b8d309f253ad07c26ad14bab05ab3f9cce87e0cc
+PODFILE CHECKSUM: e39eba7eb636a547d93ea44c3cbf330c30de991b
 
 COCOAPODS: 1.16.2
